@@ -1,0 +1,10 @@
+access rsvp confirm overview:
+  title: 'Access rsvp confirm overview page'
+delete rsvp confirm:
+  title: Delete rsvp confirm
+create rsvp confirm:
+  title: Create rsvp confirm
+view rsvp confirm:
+  title: View rsvp confirm
+edit rsvp confirm:
+  title: Edit rsvp confirm

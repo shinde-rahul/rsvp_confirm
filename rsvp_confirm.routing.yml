@@ -1,0 +1,14 @@
+entity.rsvp_confirm.collection:
+  path: '/admin/content/rsvp-confirm'
+  defaults:
+    _entity_list: 'rsvp_confirm'
+    _title: 'RSVP Confirm'
+  requirements:
+    _permission: 'view rsvp confirm'
+rsvp_confirm.settings:
+  path: '/admin/config/rsvp_confirm/settings'
+  defaults:
+    _form: 'Drupal\rsvp_confirm\Form\SettingsForm'
+    _title: 'RSVP confirm settings'
+  requirements:
+    _permission: 'administer rsvp_confirm configuration'

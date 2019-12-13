@@ -1,0 +1,18 @@
+entity.rsvp_confirm.view:
+  title: View
+  route_name: entity.rsvp_confirm.canonical
+  base_route: entity.rsvp_confirm.canonical
+entity.rsvp_confirm.edit_form:
+  title: Edit
+  route_name: entity.rsvp_confirm.edit_form
+  base_route: entity.rsvp_confirm.canonical
+entity.rsvp_confirm.delete_form:
+  title: Delete
+  route_name: entity.rsvp_confirm.delete_form
+  base_route: entity.rsvp_confirm.canonical
+  weight: 10
+entity.rsvp_confirm.collection:
+  title: RSVP confirm
+  route_name: entity.rsvp_confirm.collection
+  base_route: system.admin_content
+  weight: 10

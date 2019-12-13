@@ -1,0 +1,5 @@
+rsvp_confirm.add_form:
+  route_name: entity.rsvp_confirm.add_form
+  title: 'Add rsvp confirm'
+  appears_on:
+    - entity.rsvp_confirm.collection
