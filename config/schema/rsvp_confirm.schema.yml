@@ -1,0 +1,7 @@
+block.settings.rsvp_confirm:
+  type: block_settings
+  label: 'RSVP confirm block'
+  mapping:
+    foo:
+      type: string
+      label: Foo

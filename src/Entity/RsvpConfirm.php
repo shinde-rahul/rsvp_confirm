@@ -151,6 +151,29 @@ class RsvpConfirm extends ContentEntityBase implements RsvpConfirmInterface {
       ])
       ->setDisplayConfigurable('view', TRUE);
 
+    $fields['hide_me'] = BaseFieldDefinition::create('boolean')
+      ->setLabel(t('Status'))
+      ->setDescription(t('A boolean indicating whether to list the user.'))
+      ->setDefaultValue(TRUE)
+      ->setSetting('on_label', 'Enabled')
+      ->setDisplayOptions('form', [
+        'type' => 'boolean_checkbox',
+        'settings' => [
+          'display_label' => FALSE,
+        ],
+        'weight' => 0,
+      ])
+      ->setDisplayConfigurable('form', TRUE)
+      ->setDisplayOptions('view', [
+        'type' => 'boolean',
+        'label' => 'above',
+        'weight' => 0,
+        'settings' => [
+          'format' => 'enabled-disabled',
+        ],
+      ])
+      ->setDisplayConfigurable('view', TRUE);
+
     $fields['nid'] = BaseFieldDefinition::create('entity_reference')
       ->setLabel(t('Node'))
       ->setDescription(t('The node ID of the rsvp confirm content.'))
